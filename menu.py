@@ -19,8 +19,23 @@ def Temperaturas():
 
 def Personas():
     print("***** Datos de personas *****")
+    #ingresar para n personas donde n es un numero ingresado por teclado: 
+    #nombre y edad. Mostrar cuantas personas son mayores de edad y cuantas son menores de edad
+    #subir a github la segunda version de lo programado con el siguiente commit:
+    #"Se agrego opcion 2 al menu de python"
 
-
+    mayor = 0
+    menor = 0
+    veces = int(input("Cuantas personas quiere ingresar?: "))
+    for x in range(veces):
+        nom = input("Ingrese el nombre: ")
+        edad = int(input("Ingrese la edad de la persona: "))
+        if edad >= 18:
+            mayor+=1
+        elif edad < 18:
+            menor+=1
+    print("La cantidad de personas mayores de edad es: " + str(mayor))
+    print("La cantidad de personas menores de edad es: " + str(menor))
     pausa = input("presione una tecla")
 
 
